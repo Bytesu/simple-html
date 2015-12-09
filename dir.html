@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>dir html</title>
+    <link href="//cdn.bootcss.com/normalize/3.0.3/normalize.css" rel="stylesheet">
+    <style>
+        *{
+            box-sizing: border-box;
+            padding: 0;margin: 0;
+        }
+        .fase-time-line {
+            margin-left: 300px;
+            border-left: 1px solid #e8f0f6;
+            line-height: 18px;
+            padding: 0 10px;
+            margin-top: 10px;
+
+        }
+        .fase-time-line>div {
+            list-style: none;
+            position: relative;
+        }
+        .dir {
+            width: 600px;
+            border-right: 1px solid #e8f0f6;;
+            height: 400px;
+            margin: 0 auto;
+            margin-top: 50px;;
+        }
+        .item{
+            list-style: none;
+            position: relative;
+            padding: 8px;
+            margin: 18px 10px 18px 0;
+        }
+        .public-time {
+            position: absolute;
+            width: 75px;
+            text-align: right;
+            left: -94px;
+            padding: 0 10px;
+            font-size: 12px;
+            color: #bbb;
+        }
+        .public-time:before {
+            content: "";
+            position: absolute;
+            width: 12px;
+            height: 12px;
+            background-color: #fff;
+            border-radius: 100%;
+            border: 2px solid #45acf7;
+            /*top: 44%;*/
+            right: -16px;
+            margin-top: 5px;
+        }
+        .tags {
+            margin-right: 15px;
+            float: left;
+            width: 85px;
+            text-align: center;
+            color: #fff;
+            background-color: rgb(46, 185, 113);
+            padding: 4px 3px;
+        }
+    </style>
+</head>
+<body>
+<div class="dir fase-time-line">
+    <div class="item">
+        <span class="public-time"></span>
+        <span class="tags  tags-company">公司群组</span>
+        <div class="item">
+            <span class="public-time"></span>
+            <span class="tags  tags-company">WC群组</span>
+        </div>
+    </div>
+    <div class="item">
+        <span class="public-time"></span>
+        <span class="tags  tags-company">WC群组</span>
+    </div>
+    <div class="item">
+        <span class="public-time"></span>
+        <span class="tags  tags-company">WBS群组</span>
+    </div>
+</body>
+</html>
